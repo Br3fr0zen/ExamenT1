@@ -1,0 +1,390 @@
+.background {
+    -fx-background-color: #EEEEEE;
+}
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * ColorPicker                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+.color-picker {
+    -fx-background-color: #669999; 
+    -fx-background-radius: 0 0 0 0; 
+    -fx-fill: #000000;
+    
+}
+
+.color-picker .color-picker-label .text {
+    -fx-fill: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Label       		                                                           *
+ *                                                                             *
+ ******************************************************************************/
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * TableView                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color; 
+   
+    
+    
+}
+
+
+
+
+
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Split-pane                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
+    -fx-background-color: transparent, derive(#1d1d1d,20%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Menu	                                                                       *
+ *                                                                             *
+ ******************************************************************************/
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,20%);
+    
+    
+}
+
+.context-menu {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: black;
+}
+
+
+
+
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * TextField                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * DatePicker                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+.date-picker .month-year-pane{
+	-fx-text-fill: white;
+     -fx-background-color:  #3F51B5;
+     -fx-padding: 5 5 5 5;
+     
+}
+date-picker .cell{
+   -fx-background-color: #EEEEEE;
+   -fx-text-fill:white;
+   -fx-border-color:white;
+
+}
+
+.date-picker .cell:hover{
+   -fx-background-color: #4F4F4F; 
+   -fx-text-fill:white;
+   -fx-border-color:white;
+
+}
+
+.date-picker .day-name-cell{
+   -fx-background-color: #5C6BC0; 
+   -fx-text-fill:white;
+
+
+}
+.date-picker-popup > * > .previous-month,
+.date-picker-popup > * > .next-month {
+    -fx-background: derive(-fx-control-inner-background, -4%);
+    -fx-text-fill:#E0E0E0;
+}
+
+.date-picker .month-year-pane .button{
+     -fx-background-color: #3F51B5;
+     -fx-border-width: 0;
+     
+}
+
+
+
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * ScrollBar                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+/* The increment and decrement button CSS class of scrollbar */
+.mylistview .increment-button ,.mylistview .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.mylistview .scroll-bar:horizontal .track,
+.mylistview .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive(gray,80%);
+
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.mylistview .scroll-bar:horizontal .thumb,
+.mylistview .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+
+
+
+
+
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Toolbar buttons                                                             *
+ *                                                                             *
+ ******************************************************************************/
+.cross {
+    -fx-image: url(img/close.png);
+}
+.cross:hover {
+    -fx-image: url(img/close-hover.png);
+}
+.minimize {
+    -fx-image: url(img/minimize.png);
+}
+.minimize:hover {
+    -fx-image: url(img/minimize-hover.png); 
+}
+
+
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * EditView buttons                                                            *
+ *                                                                             *
+ ******************************************************************************/
+
+.editbutton:default{
+	-fx-background-radius: 0 0 0 0; 
+	-fx-padding: 0 0 0 0;
+	-fx-background-color: #D81B60; 
+}
+.editbutton:default:hover{
+	-fx-background-color: #C2185B;
+}
+.cancelbutton:default{
+	-fx-background-radius: 0 0 0 0; 
+	-fx-padding: 0 0 0 0;
+	-fx-background-color: #607D8B; 
+}
+.cancelbutton:default:hover{
+	-fx-background-color: #546E7A;
+}
+
+
+
+
+
+
+ 
+ 
+ /*******************************************************************************
+ *                                                                             *
+ * Person Buttons                                                              *
+ *                                                                             *
+ ******************************************************************************/
+.masbutton:hover{
+	-fx-background-color: black;
+}
+ 
+.button {
+    -fx-padding: 0 0 0 0;
+    -fx-width: 200;
+    -fx-height:209;   
+    -fx-background-radius: 0; 
+    -fx-background-color: #1d1d1d; 
+    -fx-background-insets: 0 0 0 0, 0, 1, 2; 
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-label-padding: 5,5,5,5;
+    -fx-text-alignment: center;
+    -fx-background-radius: 0 0 0 0; 
+}
+
+
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    /*-fx-background-color: -fx-focus-color; */
+    -fx-text-fill: #ffffff;
+}
+
